@@ -8,9 +8,7 @@ const taskController = new TaskController();
 taskRoutes.post("/", (req, res) => {
     taskController.createTask(req, res);
 });
-taskRoutes.get("/allTasks", (req, res) => {
-    taskController.getAllTasks(req, res);
-});
+
 taskRoutes.patch("/", (req, res) => {
     taskController.updateTask(req, res);
 });
