@@ -5,7 +5,7 @@ const listRoutes = Router();
 
 const listController = new ListController();
 
-listRoutes.get("/", (req: Request, res: Response)=>{
+listRoutes.get("/all", (req: Request, res: Response)=>{
     listController.getLists(req, res);
 });
 
